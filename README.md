@@ -1,24 +1,29 @@
-# README
+# RPL version 3 backend server
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Install [Ruby version 2.4.10 + DevKit](https://rubyinstaller.org/downloads/archives/)
 
-Things you may want to cover:
+- Install Bundler package manager: `gem install bundle`
 
-* Ruby version
+- Run `bundle install --path=vendor/bundle` to download all dependencies
 
-* System dependencies
+- Install [PostgreSQL](https://www.postgresql.org/download/) version 9.6
 
-* Configuration
+- Create _application.yml_ and _database.yml_ files from samples:
 
-* Database creation
+  - `cp config/application.yml.sample config/application.yml`
+  - `mv config/database.yml.sample config/database.yml`
 
-* Database initialization
+- Change the username and password in _database.yml_ to your local user
 
-* How to run the test suite
+- Execute DB operations before starting the server:
 
-* Services (job queues, cache servers, search engines, etc.)
+  - rails db:environment:set RAILS_ENV=development
+  - bundle exec rake db:setup --trace
+  - bundle exec rake db:seed --trace
+  - bundle exec rake db:migrate --trace
+  - bundle exec rake prepare_league --trace
+  - bundle exec rake start --trace
 
-* Deployment instructions
+- Start the Puma server with `bundle exec puma .\config.ru -b tcp://localhost:3000`
 
-* ...
+<!--  -->
