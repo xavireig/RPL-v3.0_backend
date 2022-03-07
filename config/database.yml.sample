@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: nahid
+  password: root
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  port: 5432
+  host: localhost
+
+development:
+  <<: *default
+  database: rotopremierleague_development
+
+test:
+  <<: *default
+  database: rotopremierleague_test
+
+production:
+  <<: *default
+  database: rotopremierleague_production

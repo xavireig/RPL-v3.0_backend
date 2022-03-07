@@ -1,0 +1,37 @@
+<div style="text-align: center">
+  <p>Hi <%= @user.fname %>!</p>
+  <p>Thanks for signing up for <span style="color: #3bafda">Roto Premier League.</span></p>
+  <p>First things first - please confirm your email: </p>
+  <a
+    style="
+      display: inline-block;
+      text-decoration: none;
+      border: 2px solid #2ECC71;
+      border-radius: 10px;
+      margin: 0;
+      font-family: 'proxima_nova_lt';
+      font-size: 14pt;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      padding: 12px 22px;
+      text-align: center;
+      color: #fff;
+      transition: all ease-out 0.3s;
+      background-color: #111A23;
+      touch-action: manipulation;
+      cursor: pointer;
+      background-image: none;
+      outline: none;
+    "
+    href="<%= CONFIG['front_domain'] %>/email/confirmation/<%= @token%>"> GET STARTED</a></P>
+  <br/>
+  <p>If this email was sent to you by mistake, please ignore.</p>
+  <p>We won't bother you again.</p>
+  <br/>
+  <p>If you have any questions, please contact us at</p>
+  <p>help@rotopremierleague.com</p>
+  <div style="margin-top: 20px; font-size: 8px;">
+    <div style="display: inline-block; text-align: left;"><a href="mailto:#"> this email was sent to stephen.schaller@gmail.com </a></div>
+    <div style="display: inline-block; margin-left: 200px;"><a href="mailto:#">unsubscribe from this list</a></div>
+  </div>
+</div>

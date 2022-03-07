@@ -1,0 +1,23 @@
+braintree: &braintree
+  braintree:
+    merchant_id:
+    public_key:
+    private_key:
+
+test:
+  domain: "127.0.0.1:3000"
+  domain_only: "127.0.0.1"
+  xml_folder: "/home/rpl/uploads/"
+  <<: *braintree
+
+development:
+  domain: "0.0.0.0:3009"
+  domain_only: "0.0.0.0"
+  xml_folder: "/home/sumon/RPL"
+  <<: *braintree
+
+production:
+  domain: "rplv2dev.scrij.com"
+  domain_only: "rplv2dev.scrij.com"
+  xml_folder: "/home/rpl/uploads/"
+  <<: *braintree

@@ -1,0 +1,15 @@
+---
+:verbose: true
+:concurrency:  8
+:average_scheduled_poll_interval: 1
+:queues:
+  - [mocktask, 1]
+  - [mailers, 2]
+  - [default, 3]
+  - [send_queue, 3]
+  - [file_queue, 5]
+  - [create_virtual_footballer, 7]
+  - [proc_queue, 14]
+  - [formation, 15]
+  - [draft_queue, 20]
+

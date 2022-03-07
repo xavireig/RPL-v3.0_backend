@@ -1,0 +1,8 @@
+<%#
+  @current_user is defined in
+  ApplicationController#prepare_exception_notifier
+  -Zahidul 2017-07-25
+%>
+current_user id: <%= @current_user.try!(:id) %>
+current_user name: <%= @current_user.try!(:name) %>
+

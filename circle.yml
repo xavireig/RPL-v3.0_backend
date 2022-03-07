@@ -1,0 +1,24 @@
+machine:
+  environment:
+    RAILS_ENV: development
+    RACK_ENV: development
+  services:
+    - redis
+
+dependencies:
+  override:
+    - sudo service postgresql stop
+    - sudo mv /usr/lib/postgresql-9.6/9.6 /usr/lib/postgresql/9.6
+    - sudo mv /etc/postgresql-9.6/9.6 /etc/postgresql/9.6
+    - sudo sed -i 's/port = 5433/port = 5432/' /etc/postgresql/9.6/main/postgresql.conf
+    - sudo sed -i 's/md5$/trust/' /etc/postgresql/9.6/main/pg_hba.conf
+    - sudo service postgresql start 9.6
+    - sudo su postgres -c "createuser -s $USER"
+    - cp config/application.yml.sample config/application.yml
+    - bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs=4 --retry=3
+
+database:
+  override:
+    - mv config/circle_database.yml config/database.yml
+    - bundle exec rake db:create --trace
+    - bundle exec rake db:setup

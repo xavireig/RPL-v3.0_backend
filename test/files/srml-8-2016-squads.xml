@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2001-2016 Opta Sportsdata Ltd. All rights reserved. -->
+
+<!-- PRODUCTION HEADER
+     produced on:        valde-jobq-a01.nexus.opta.net
+     production time:    20160813T103145,573Z
+     production module:  Opta::Feed::XML::Soccer::F40
+-->
+<SoccerFeed timestamp="20160813T103145+0000">
+  <SoccerDocument Type="SQUADS Latest" competition_code="EN_PR" competition_id="8" competition_name="English Premier League" season_id="2016" season_name="Season 2016/2017">
+    <Team country="England" country_id="1" country_iso="EN" region_id="17" region_name="Europe" short_club_name="Hull" uID="t88">
+      <Founded>1904</Founded>
+      <Name>Hull City</Name>
+      <Player uID="p202174">
+        <Name>Greg Luer</Name>
+        <Position>Forward</Position>
+        <Stat Type="first_name">Greg</Stat>
+        <Stat Type="last_name">Luer</Stat>
+        <Stat Type="birth_date">1994-12-06</Stat>
+        <Stat Type="weight">73</Stat>
+        <Stat Type="height">180</Stat>
+        <Stat Type="jersey_num">32</Stat>
+        <Stat Type="real_position">Striker</Stat>
+        <Stat Type="real_position_side">Centre</Stat>
+        <Stat Type="join_date">2015-01-03</Stat>
+        <Stat Type="country">England</Stat>
+      </Player>
+      <SYMID>HUL</SYMID>
+      <Stadium uID="2638">
+        <Capacity>25400</Capacity>
+        <Name>KCOM Stadium</Name>
+      </Stadium>
+      <TeamOfficial Type="Manager" country="England" uID="man38331">
+        <PersonName>
+          <BirthDate>1962-09-24</BirthDate>
+          <First>Mike</First>
+          <Last>Phelan</Last>
+          <join_date>2016-07-22</join_date>
+        </PersonName>
+      </TeamOfficial>
+    </Team>
+    <Team country="England" country_id="1" country_iso="EN" region_id="17" region_name="Europe" short_club_name="Leicester" uID="t13">
+      <Founded>1884</Founded>
+      <Name>Leicester City</Name>
+      <Player uID="p103025">
+        <Name>Riyad Mahrez</Name>
+        <Position>Midfielder</Position>
+        <Stat Type="first_name">Riyad</Stat>
+        <Stat Type="last_name">Mahrez</Stat>
+        <Stat Type="birth_date">1991-02-21</Stat>
+        <Stat Type="birth_place">Sarcelles</Stat>
+        <Stat Type="first_nationality">France</Stat>
+        <Stat Type="weight">61</Stat>
+        <Stat Type="height">179</Stat>
+        <Stat Type="jersey_num">26</Stat>
+        <Stat Type="real_position">Winger</Stat>
+        <Stat Type="real_position_side">Left/Right</Stat>
+        <Stat Type="join_date">2014-01-11</Stat>
+        <Stat Type="country">Algeria</Stat>
+      </Player>
+      <SYMID>LEI</SYMID>
+      <Stadium uID="2516">
+        <Capacity>32312</Capacity>
+        <Name>King Power Stadium</Name>
+      </Stadium>
+      <TeamOfficial Type="Manager" country="Italy" uID="man80">
+        <PersonName>
+          <BirthDate>1951-10-20</BirthDate>
+          <First>Claudio</First>
+          <Last>Ranieri</Last>
+          <join_date>2015-07-13</join_date>
+        </PersonName>
+      </TeamOfficial>
+      <TeamOfficial Type="Assistant Manager" country="England" uID="man44439">
+        <PersonName>
+          <BirthDate>1963-10-26</BirthDate>
+          <First>Craig</First>
+          <Last>Shakespeare</Last>
+          <join_date>2011-11-15</join_date>
+        </PersonName>
+      </TeamOfficial>
+    </Team>
+  </SoccerDocument>
+</SoccerFeed>

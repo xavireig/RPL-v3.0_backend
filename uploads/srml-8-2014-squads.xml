@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2001-2016 Opta Sportsdata Ltd. All rights reserved. -->
+
+<!-- PRODUCTION HEADER
+     produced on:        valde-jobq-a04.nexus.opta.net
+     production time:    20161010T134243,759Z
+     production module:  Opta::Feed::XML::Soccer::F40
+-->
+<SoccerFeed timestamp="20161010T134243+0000">
+  <SoccerDocument Type="SQUADS Latest" competition_code="EN_PR" competition_id="8" competition_name="English Premier League" season_id="2014" season_name="Season 2014/2015">
+    <Team city="London" country="England" country_id="1" country_iso="EN" postal_code="N5 1BU" region_id="17" region_name="Europe" short_club_name="Arsenal" street="75 Drayton Park" uID="t3" web_address="http://www.arsenal.com">
+      <Founded>1886</Founded>
+      <Name>Arsenal</Name>
+      <Player uID="p153134">
+        <Name>Glen Kamara</Name>
+        <Position>Midfielder</Position>
+        <Stat Type="first_name">Glen</Stat>
+        <Stat Type="last_name">Kamara</Stat>
+        <Stat Type="birth_date">1995-10-28</Stat>
+        <Stat Type="birth_place">Tampere</Stat>
+        <Stat Type="first_nationality">Finland</Stat>
+        <Stat Type="weight">78</Stat>
+        <Stat Type="height">181</Stat>
+        <Stat Type="jersey_num">47</Stat>
+        <Stat Type="real_position">Defensive Midfielder</Stat>
+        <Stat Type="real_position_side">Centre</Stat>
+        <Stat Type="join_date">2014-12-01</Stat>
+        <Stat Type="country">Finland</Stat>
+      </Player>
+      <SYMID>ARS</SYMID>
+      <Stadium uID="3250">
+        <Capacity>60272</Capacity>
+        <Name>Emirates Stadium</Name>
+      </Stadium>
+      <TeamOfficial Type="Assistant Manager" country="England" uID="man42456">
+        <PersonName>
+          <BirthDate>1962-11-16</BirthDate>
+          <First>Steve</First>
+          <Last>Bould</Last>
+          <join_date>2012-07-01</join_date>
+        </PersonName>
+      </TeamOfficial>
+      <TeamOfficial Type="Manager" country="France" uID="man51">
+        <PersonName>
+          <BirthDate>1949-10-22</BirthDate>
+          <First>Arsène</First>
+          <Last>Wenger</Last>
+          <join_date>1996-09-30</join_date>
+        </PersonName>
+      </TeamOfficial>
+    </Team>
+    <Team country="England" country_id="1" country_iso="EN" region_id="17" region_name="Europe" short_club_name="A Villa" uID="t7">
+      <Founded>1874</Founded>
+      <Name>Aston Villa</Name>
+    </Team>
+  </SoccerDocument>
+</SoccerFeed>

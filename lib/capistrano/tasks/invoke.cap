@@ -1,0 +1,9 @@
+namespace :deploy do
+  desc "Invoke rake task"
+  task :rake, :task do |t, arg|
+    on roles(:app) do
+      execute "cd #{deploy_to}/current && #{fetch(:rbenv_prefix)} bundle exec \
+        rake #{arg['task']} RAILS_ENV=#{fetch(:stage)}"
+    end
+  end
+end

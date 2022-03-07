@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2001-2016 Opta Sportsdata Ltd. All rights reserved. -->
+
+<!-- PRODUCTION HEADER
+     produced on:        valde-jobq-a04.nexus.opta.net
+     production time:    20161010T134248,846Z
+     production module:  Opta::Feed::XML::Soccer::F40
+-->
+<SoccerFeed timestamp="20161010T134248+0000">
+  <SoccerDocument Type="SQUADS Latest" competition_code="EN_PR" competition_id="8" competition_name="English Premier League" season_id="2015" season_name="Season 2015/2016">
+    <PlayerChanges>
+      <Team uID="t3">
+        <Name>Arsenal</Name>
+        <Player uID="p153134">
+          <Name>Glen Kamara</Name>
+          <Position>Midfielder</Position>
+          <Stat Type="first_name">Glen</Stat>
+          <Stat Type="last_name">Kamara</Stat>
+          <Stat Type="birth_place">Tampere</Stat>
+          <Stat Type="first_nationality">Finland</Stat>
+          <Stat Type="birth_date">1995-10-28</Stat>
+          <Stat Type="weight">78</Stat>
+          <Stat Type="height">181</Stat>
+          <Stat Type="jersey_num">47</Stat>
+          <Stat Type="real_position">Defensive Midfielder</Stat>
+          <Stat Type="real_position_side">Centre</Stat>
+          <Stat Type="join_date">2014-12-01</Stat>
+          <Stat Type="leave_date">2016-01-21</Stat>
+          <Stat Type="new_team">Southend United</Stat>
+          <Stat Type="country">Finland</Stat>
+        </Player>
+      </Team>
+    </PlayerChanges>
+  </SoccerDocument>
+</SoccerFeed>

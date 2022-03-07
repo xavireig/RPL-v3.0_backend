@@ -1,0 +1,6 @@
+<h1>Hi, </h1>
+<p>
+  You have have been invited to join this league: <%= @chairman_league.title %>,
+  by the kind chairman: <%= @chairman.fname %> Click on this link to join:
+  <a href="<%= CONFIG['front_domain']%>/league/invite/<%= @chairman_league.invite_code %>/link" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #2BAADF;font-weight: normal;text-decoration: underline;"><%= CONFIG['front_domain'] %>/league/invite/<%= @chairman_league.invite_code %>/link</a><br>
+</p>

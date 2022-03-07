@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2001-2016 Opta Sportsdata Ltd. All rights reserved. -->
+
+<!-- PRODUCTION HEADER
+     produced on:        valde-jobq-a01.nexus.opta.net
+     production time:    20160615T090904,407Z
+     production module:  Opta::Feed::XML::Soccer::F1
+-->
+<SoccerFeed>
+  <SoccerDocument Type="RESULTS Latest" competition_code="EN_PR" competition_id="8" competition_name="English Premier League" game_system_id="1" season_id="2016" season_name="Season 2016/2017" timestamp="2016-06-15 10-09-04">
+    <MatchData detail_id="1" last_modified="2016-06-15T02:27:36+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g855178">
+      <MatchInfo MatchDay="1" MatchType="Regular" Period="PreMatch" Venue_id="2638">
+        <Date>2016-08-13 15:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">The KC Stadium</Stat>
+      <Stat Type="City">Hull</Stat>
+      <TeamData Side="Home" TeamRef="t88" />
+      <TeamData Side="Away" TeamRef="t13" />
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2016-06-15T02:27:37+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g855540">
+      <MatchInfo MatchDay="37" MatchType="Regular" Period="PreMatch" Venue_id="51">
+        <Date>2017-05-13 15:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">The Hawthorns</Stat>
+      <Stat Type="City">West Bromwich</Stat>
+      <TeamData Side="Home" TeamRef="t35" />
+      <TeamData Side="Away" TeamRef="t8" />
+    </MatchData>
+    <TimingTypes>
+      <DetailTypes>
+        <DetailType detail_id="0" name="Unknown" />
+        <DetailType detail_id="1" name="All Events (with positions)" />
+        <DetailType detail_id="2" name="All Events" />
+        <DetailType detail_id="3" name="Key Events" />
+        <DetailType detail_id="4" name="Lineups, Goals &amp; Cards" />
+        <DetailType detail_id="5" name="Goals" />
+        <DetailType detail_id="6" name="Scores" />
+      </DetailTypes>
+      <TimestampAccuracyTypes>
+        <TimestampAccuracyType name="Unknown" timing_id="0" />
+        <TimestampAccuracyType name="Fully Accurate Timestamps (24hr + Match Times)" timing_id="1" />
+        <TimestampAccuracyType name="Accurate Match Times only" timing_id="2" />
+        <TimestampAccuracyType name="To The Minute Accurate" timing_id="3" />
+        <TimestampAccuracyType name="Low Level Accurate Match Times" timing_id="4" />
+        <TimestampAccuracyType name="No Match Time Accuracy" timing_id="5" />
+      </TimestampAccuracyTypes>
+      <TimingType>
+        <TimingType name="Unknown" timestamp_accuracy_id="0" />
+        <TimingType name="Live" timestamp_accuracy_id="1" />
+        <TimingType name="Live Delayed" timestamp_accuracy_id="2" />
+        <TimingType name="Post Match (less than 24 hours)" timestamp_accuracy_id="3" />
+        <TimingType name="Post Match (24 hours+)" timestamp_accuracy_id="4" />
+      </TimingType>
+    </TimingTypes>
+    <Team uID="t35">
+      <Name>West Bromwich Albion</Name>
+    </Team>
+    <Team uID="t88">
+      <Name>Hull City</Name>
+    </Team>
+    <Team uID="t13">
+      <Name>Leicester City</Name>
+    </Team>
+    <Team uID="t8">
+      <Name>Chelsea</Name>
+    </Team>
+  </SoccerDocument>
+</SoccerFeed>

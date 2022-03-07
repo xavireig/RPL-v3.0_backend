@@ -1,0 +1,36 @@
+namespace :observer do
+  desc 'Start rb-inotify observer'
+  task :start do
+    on roles(:app) do
+      within current_path do
+        with rails_env: fetch(:rails_env) do
+          execute :rake, 'start_rpl_file_observer'
+        end
+      end
+    end
+  end
+
+  desc 'Stop rb-inotify observer'
+  task :stop do
+    on roles(:app) do
+      within current_path do
+        with rails_env: fetch(:rails_env) do
+          pid_file = [current_path, fetch(:observer_pid)].join('/')
+          execute "((ls #{pid_file} && ps -p `cat #{pid_file}`) && kill -9 `cat #{pid_file}`) || true"
+        end
+      end
+    end
+  end
+
+  desc 'Restart rb-inotify observer'
+  task :restart do
+    on roles(:app) do
+      within current_path do
+        with rails_env: fetch(:rails_env) do
+          invoke 'observer.stop'
+          invoke 'observer.start'
+        end
+      end
+    end
+  end
+end
