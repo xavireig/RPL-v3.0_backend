@@ -8,6 +8,8 @@
 
 - Install [PostgreSQL](https://www.postgresql.org/download/) version 9.6
 
+- Manually add the PostgreSQL bin folder to the _PATH_
+
 - Create _application.yml_ and _database.yml_ files from samples:
 
   - `cp config/application.yml.sample config/application.yml`
@@ -17,12 +19,11 @@
 
 - Execute DB operations before starting the server:
 
-  - rails db:environment:set RAILS_ENV=development
+  - bundle exec rake db:create --trace
   - bundle exec rake db:setup --trace
-  - bundle exec rake db:seed --trace
   - bundle exec rake db:migrate --trace
-  - bundle exec rake prepare_league --trace
-  - bundle exec rake start --trace
+  - bundle exec rake prepare_league --trace (this will fail for now)
+  - rails db:environment:set RAILS_ENV=development
 
 - Start the Puma server with `bundle exec puma .\config.ru -b tcp://localhost:3000`
 
